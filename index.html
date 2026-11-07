@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101510">
+  <title>Emberfall — A Life Unwritten</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" data-tab="life" aria-label="Go to life"><span class="brand-mark">✦</span><span>EMBERFALL<small>A LIFE UNWRITTEN</small></span></button>
+      <div class="top-actions"><span class="save-state"><i></i> Saved</span><button class="icon-btn" id="soundBtn" aria-label="Toggle ambience">♫</button><button class="icon-btn" id="menuBtn" aria-label="Game menu">☰</button></div>
+    </header>
+    <main id="app"></main>
+    <nav class="bottom-nav" aria-label="Game navigation">
+      <button class="nav-item active" data-tab="life"><span>♧</span>Life</button>
+      <button class="nav-item" data-tab="people"><span>♙</span>People</button>
+      <button class="nav-item" data-tab="realm"><span>⌂</span>Realm</button>
+      <button class="nav-item" data-tab="arcana"><span>✧</span>Arcana</button>
+    </nav>
+    <div id="modal-root"></div>
+    <div id="toast" role="status"></div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
